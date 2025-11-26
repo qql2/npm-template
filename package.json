@@ -1,16 +1,19 @@
 {
-  "name": "",
+  "name": "@qql2/pack-name",
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
   "scripts": {
-  	"dev": "node esbuild.config.mjs",
-  	"build": "tsc -skipLibCheck && node esbuild.config.mjs production",
-  	"pub": "npm run build & npm publish"
+    "dev": "node esbuild.config.mjs",
+    "build": "tsc -skipLibCheck && node esbuild.config.mjs production",
+    "pub": "npm run build & npm publish"
   },
   "author": "qql2",
+  "publishConfig": {
+    "access": "public"
+  },
   "types": "main.d.ts",
-  "devDependencies":{
+  "devDependencies": {
     "esbuild": "0.21.5"
   }
 }
